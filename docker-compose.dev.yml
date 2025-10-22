@@ -1,0 +1,42 @@
+services:
+  backend:
+    build:
+      context: ./frontpage_test_backend
+    working_dir: /app
+    volumes:
+      - ./frontpage_test_backend/src:/app/src
+      - ./frontpage_test_backend/node_modules:/app/node_modules
+    ports:
+      - "5000:5000"
+    env_file:
+      - ./frontpage_test_backend/.env
+    depends_on:
+      - db
+
+  frontend:
+    build:
+      context: ./frontpage_test_frontend
+    working_dir: /app
+    volumes:
+      - ./frontpage_test_frontend/src:/app/src
+      - ./frontpage_test_frontend/node_modules:/app/node_modules
+    ports:
+      - "3000:3000"
+    # env_file:
+    #   - ./frontpage/frontpage-test-frontend/.env.local
+    depends_on:
+      - backend
+
+  db:
+    image: mysql:8
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: testdb-123
+      MYSQL_DATABASE: frontpage
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+
+volumes:
+  db_data:
