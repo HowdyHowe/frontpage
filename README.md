@@ -1,6 +1,7 @@
 # 🌐 Sistem Informasi Frontpage
 Fullstack Application (Next.js + Express.js + MySQL + Prisma)
 
+------------------------------------------------------------
 ## 📘 Deskripsi Proyek
 Proyek ini merupakan aplikasi berbasis web yang terdiri atas dua komponen utama:
 
@@ -9,12 +10,16 @@ Proyek ini merupakan aplikasi berbasis web yang terdiri atas dua komponen utama:
 
 Struktur proyek ini mendukung pengembangan modular di mana frontend dan backend dikelola secara terpisah dalam subfolder tersendiri.
 
+------------------------------------------------------------
 ## 🧩 Struktur Direktori
+```
 project-root/
 ├── frontend/     → Next.js (TypeScript)
 ├── backend/      → Express.js (TypeScript + Prisma)
 └── docker-compose.yml
+```
 
+------------------------------------------------------------
 ## 🚀 Bagian 1 — Menjalankan dengan Docker (Direkomendasikan)
 
 ### 1. Instalasi Awal
@@ -59,6 +64,7 @@ Perintah ini akan melakukan beberapa hal otomatis:
 docker compose down
 ```
 
+------------------------------------------------------------
 ## 🧰 Bagian 2 — Alternatif Manual (Tanpa Docker)
 
 Jika tidak ingin menggunakan Docker, jalankan frontend dan backend secara manual.
@@ -118,12 +124,53 @@ npm run dev
 
 Frontend berjalan di: http://localhost:3000
 
+------------------------------------------------------------
 ## 🧠 Ringkasan Jalur Akses
 Komponen | Alamat Lokal | Deskripsi
 ----------|---------------|-----------
 Frontend | http://localhost:3000 | Tampilan antarmuka utama pengguna
 Backend  | http://localhost:5000 | API utama aplikasi
 Database | localhost:3306 | Server MySQL (via XAMPP atau Docker)
+
+------------------------------------------------------------
+## 🧠 Tech Stack
+Frontend:
+- Next.js (TypeScript)
+- TailwindCSS
+- Axios (untuk komunikasi API)
+
+Backend:
+- Express.js (TypeScript)
+- Prisma ORM
+- MySQL (melalui XAMPP atau Docker)
+- dotenv, cors, morgan
+
+Tools & Infrastruktur:
+- Docker & Docker Compose
+- Git Submodules
+- Node.js v22.x
+
+------------------------------------------------------------
+## 🏗️ Arsitektur Sistem
+Proyek ini menggunakan arsitektur client-server di mana:
+
+Frontend (Client):
+Bertanggung jawab menampilkan antarmuka pengguna dan mengirimkan permintaan HTTP ke server backend.
+
+Backend (Server):
+Menerima permintaan dari frontend, mengelola logika bisnis, dan melakukan interaksi dengan database MySQL.
+
+Database (MySQL):
+Menyimpan data utama seperti pengguna, artikel, dan kategori film (atau konten terkait aplikasi).
+
+Alur data:
+Frontend (Next.js) → Backend (Express.js) → Database (MySQL)
+
+------------------------------------------------------------
+## ✅ Kesimpulan
+Anda dapat memilih dua cara untuk menjalankan proyek:
+1. Menggunakan Docker — direkomendasikan untuk kemudahan setup.
+2. Manual Setup dengan XAMPP — jika Docker tidak berfungsi.
 
 ## ⚙️ Tips dan Pemecahan Masalah
 - Jika @prisma/client error, jalankan ulang: npm run prisma:generate
