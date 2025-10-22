@@ -37,7 +37,7 @@ Jika muncul versi Docker, instalasi berhasil.
 
 ### 2. Kloning Repositori
 ```
-git clone git clone --recurse-submodules https://github.com/HowdyHowe/frontpage.git
+git clone --recurse-submodules https://github.com/HowdyHowe/frontpage.git
 cd frontpage
 ```
 
@@ -54,7 +54,10 @@ Perintah ini akan melakukan beberapa hal otomatis:
 2. Menginstal semua dependensi (npm install)
 3. Menjalankan database MySQL, backend, dan frontend dalam container terpisah
 
+> catatan: Waktu yang digunakan untuk membangun project bervariasi, dan sangat bergantung dengan kecepatan jaringan atau performa device yang digunakan, estimasi waktu untuk membangun project adalah 10-20 menit dalam kondisi normal. Dan juga perfoma dari website juga sangat bergantung dengan performa dari device yang digunakan.
+
 ### 4. Akses Aplikasi
+Akses frontend dari aplikasi untuk melihat website.
 - Frontend (Next.js): http://localhost:3000
 - Backend (Express.js API): http://localhost:5000
 - Database (MySQL): localhost:3306
@@ -180,7 +183,6 @@ Anda dapat memilih dua cara untuk menjalankan proyek:
 
 ------------------------------------------------------------
 ## 🧾 Lisensi
-Proyek ini dikembangkan untuk tujuan pembelajaran dan pengembangan sistem informasi berbasis web.
 Anda dapat memodifikasi dan menggunakan proyek ini untuk kebutuhan pribadi atau penelitian.
 
 © 2025 - Fullstack Frontpage Application
