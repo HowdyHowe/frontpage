@@ -1,0 +1,6 @@
+[submodule "frontpage_test_backend"]
+	path = frontpage_test_backend
+	url = https://github.com/your-username/frontpage_test_backend.git
+[submodule "frontpage_test_frontend"]
+	path = frontpage_test_frontend
+	url = https://github.com/your-username/frontpage_test_frontend.git
