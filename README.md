@@ -38,13 +38,13 @@ Jika muncul versi Docker, instalasi berhasil.
 ### 2. Kloning Repositori
 ```
 git clone git clone --recurse-submodules https://github.com/HowdyHowe/frontpage.git
-cd project-root
+cd frontpage
 ```
 
 Repositori ini berisi dua folder utama: frontend dan backend.
 
 ### 3. Menjalankan Seluruh Sistem dengan Docker Compose
-Pastikan Anda berada di folder project-root, lalu jalankan:
+Pastikan Anda berada di folder "/frontpage", lalu jalankan:
 ```
 docker-compose -f docker-compose.dev.yml up --build
 ```
@@ -172,11 +172,13 @@ Anda dapat memilih dua cara untuk menjalankan proyek:
 1. Menggunakan Docker — direkomendasikan untuk kemudahan setup.
 2. Manual Setup dengan XAMPP — jika Docker tidak berfungsi.
 
+------------------------------------------------------------
 ## ⚙️ Tips dan Pemecahan Masalah
 - Jika @prisma/client error, jalankan ulang: npm run prisma:generate
 - Pastikan MySQL aktif sebelum menjalankan backend
 - Jika port 3000 atau 5000 sudah digunakan, ubah di file .env masing-masing proyek
 
+------------------------------------------------------------
 ## 🧾 Lisensi
 Proyek ini dikembangkan untuk tujuan pembelajaran dan pengembangan sistem informasi berbasis web.
 Anda dapat memodifikasi dan menggunakan proyek ini untuk kebutuhan pribadi atau penelitian.
