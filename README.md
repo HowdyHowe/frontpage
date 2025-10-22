@@ -62,9 +62,13 @@ Akses frontend dari aplikasi untuk melihat website.
 - Backend (Express.js API): http://localhost:5000
 - Database (MySQL): localhost:3306
 
+> catatan: Beberapa halaman mungkin akan terasa berat dan memuat sedikit lama, itu dikarenakan penggunaan docker dalam mode development. Tetapi biasanya setelah dimuat halaman tersebut, maka saat kembali lagi akan lebih cepat karena sudah masuk ke cache.
+
 ### 5. Penghentian Layanan
 ```
 docker compose down
+atau
+ctrl + c
 ```
 
 ------------------------------------------------------------
