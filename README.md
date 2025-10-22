@@ -29,6 +29,8 @@ a. Unduh dan Instal Docker
 - Setelah instalasi selesai login dengan akun yang ingin  digunakan
 - pastikan Docker Desktop sudah berjalan
 
+> Anda juga harus menginstal WSL (Windows Subsystem for Linux), jika ketika anda menginstall docker kemudian meminta untuk menginstall WSL, anda harus menerima permintaan tersebut atau juga bisa dilakukan instalasi WSL secara manual.
+
 b. Verifikasi Instalasi
 ```
 docker --version
