@@ -29,7 +29,7 @@ a. Unduh dan Instal Docker
 - Setelah instalasi selesai login dengan akun yang ingin  digunakan
 - pastikan Docker Desktop sudah berjalan
 
-> Anda juga harus menginstal WSL (Windows Subsystem for Linux), jika ketika anda menginstall docker kemudian meminta untuk menginstall WSL, anda harus menerima permintaan tersebut atau juga bisa dilakukan instalasi WSL secara manual.
+> Anda juga harus menginstal WSL (Windows Subsystem for Linux), jika ketika anda menginstall docker kemudian diminta untuk menginstall WSL, anda harus menerima permintaan tersebut atau juga bisa dilakukan instalasi WSL secara manual yang dapat diakses pada link berikut: https://learn.microsoft.com/en-us/windows/wsl/install.
 
 b. Verifikasi Instalasi
 ```
@@ -183,9 +183,10 @@ Anda dapat memilih dua cara untuk menjalankan proyek:
 
 ------------------------------------------------------------
 ## ⚙️ Tips dan Pemecahan Masalah
-- Jika @prisma/client error, jalankan ulang: npm run prisma:generate
-- Pastikan MySQL aktif sebelum menjalankan backend
-- Jika port 3000 atau 5000 sudah digunakan, ubah di file .env masing-masing proyek
+- Jika @prisma/client error, jalankan ulang: npm run prisma:generate.
+- Pastikan MySQL aktif sebelum menjalankan backend.
+- Jika port 3000 atau 5000 sudah digunakan, ubah di file .env masing-masing proyek.
+- "npm error code ECONNRESET" adalah error yang terjadi dikarenakan masalah pada jaringan internet anda.
 
 ------------------------------------------------------------
 ## 🧾 Lisensi

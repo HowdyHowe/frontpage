@@ -12,6 +12,7 @@ services:
     depends_on:
       db:
         condition: service_healthy
+    restart: on-failure
 
   frontend:
     build:
@@ -21,8 +22,6 @@ services:
       - ./frontpage_test_frontend/src:/app/src
     ports:
       - "3000:3000"
-    # env_file:
-    #   - ./frontpage/frontpage-test-frontend/.env.local
     depends_on:
       - backend
 
@@ -39,9 +38,9 @@ services:
     healthcheck:
       test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-p$$MYSQL_ROOT_PASSWORD"]
       interval: 5s
-      timeout: 3s
-      retries: 10
-      start_period: 30s
+      timeout: 5s
+      retries: 20
+      start_period: 40s
 
 volumes:
   db_data:
