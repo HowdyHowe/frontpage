@@ -20,6 +20,7 @@ Struktur proyek ini mendukung pengembangan modular di mana frontend dan backend 
    ![Image 1](/image/image1.png)
 
 -  Login & Signup versi mobile
+
    ![Image 2](/image/image2.png)
    ![Image 3](/image/image3.png)
 
@@ -28,6 +29,7 @@ Struktur proyek ini mendukung pengembangan modular di mana frontend dan backend 
    ![Image 5](/image/image5.png)
 
 -  Dashboard versi mobile
+
    ![Image 6](/image/image6.png)
    ![Image 7](/image/image7.png)
    ![Image 8](/image/image8.png)
@@ -37,6 +39,7 @@ Struktur proyek ini mendukung pengembangan modular di mana frontend dan backend 
    ![Image 10](/image/image10.png)
 
 -  Dashboard darkmode versi mobile
+
    ![Image 11](/image/image11.png)
    ![Image 12](/image/image12.png)
    ![Image 13](/image/image13.png)
